@@ -1,0 +1,88 @@
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cupcakes-month {
+        background-color: inherit;
+        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
+        padding: var(--sectionPadding);
+        /* clips svg as the screen grows so it doesn't overflow */
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        
+        .cs-container {
+            gap: clamp(2rem, 6vw + 1.1em, 4.75rem);
+        }
+
+        .menu-intro {
+            text-align: center;
+            display: block;
+        }
+
+        .menu-intro h2 {
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 1.2em;
+            color: var(--primary);
+        }
+
+        .menu-intro h3 {
+            margin-top: 2rem;
+            font-weight: 800;
+            font-size: var(--subheaderFontSize);
+            text-transform: uppercase;
+            color: var(--bodyTextColor)!important;
+        }
+
+        .menulist-list {
+            padding: 0 clamp(2rem, 5vw, 4rem);
+            display: block;
+        }
+
+        .menulist-list ul {
+            padding: 0;
+            -webkit-column-count: 2;  /* Chrome, Safari, Opera */
+            -moz-column-count: 2;     /* Firefox */
+            column-count: 2;
+            column-gap: 15%;
+            text-align: center;
+            font-family: 'Sorts Mill Goudy', cursive;
+            font-style: italic;
+        }
+
+        .menulist-list ul li {
+            list-style: none;
+            font-size: var(--subheaderFontSize);
+            padding: 0 0 clamp(0.9rem, 5vw, 1.8rem) 0;
+            color: var(--bodyTextColor);
+            font-weight: 500;
+        }
+
+        .menulist-list-title {
+            font-weight: 700!important;
+            font-size: clamp(1rem, 5vw, 1.6rem);
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;      
+            color: var(--bodyTextColor)!important;      
+        }
+    }
+}
+
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cupcakes-month {
+        .cs-container {
+            flex-direction: column;
+        }
+
+        .menulist-list ul {
+            column-gap: 20%;
+        }
+    }
+
+}

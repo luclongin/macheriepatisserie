@@ -1,0 +1,50 @@
+---
+import './SBSReverse.less';
+import Image1 from '../../assets/images/shop1.webp';
+import Image1Mobile from '../../assets/images/shop1-m.webp';
+import Image2 from '../../assets/images/shop2.webp';
+import Image2Mobile from '../../assets/images/shop2-m.webp';
+import Image3 from '../../assets/images/shop3.webp';
+import Image3Mobile from '../../assets/images/shop3-m.webp';
+---
+
+<!-- ============================================ -->
+<!--            Side By Side Reverse              -->
+<!-- ============================================ -->
+
+<section id="our-story">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Story</span>
+            <h2 class="cs-title">A sanctuary within the city</h2>
+            <p class="cs-text">
+                Discover this delightful bakery nestled in the heart of Bình Tân District in Saigon. Established in 2015, this sweet haven is the dream-turned-reality of two talented sisters with a passion for baking. After honing their craft as bakers in France for five years, they returned to their roots with a vision to offer a sustainable and delightful experience.
+                
+            </p>
+            <p class="cs-text">
+                As you step inside, warm ambiance and irresistible aroma create a truly enchanting experience. From special celebrations to everyday indulgences, Ma Chérie Cupcake Factory offers a taste of elegance that leaves a lasting impression on both hearts and taste buds.            
+            </p>    
+        </div>
+        <div class="cs-image-group">
+            <!--Top Left Image-->
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset={Image3Mobile}>
+                <source media="(min-width: 601px)" srcset={Image3}>
+                <img aria-hidden="true" loading="lazy" decoding="async" src={Image3} alt="backyard" width="229" height="352">
+            </picture>
+            <!--Top Right Image-->
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset={Image2Mobile}>
+                <source media="(min-width: 601px)" srcset={Image2}>
+                <img aria-hidden="true" loading="lazy" decoding="async" src={Image2} width="390" height="352">
+            </picture>
+            <!--Bottom Image-->
+            <picture class="cs-picture cs-picture3">
+                <source media="(max-width: 600px)" srcset={Image1Mobile}>
+                <source media="(min-width: 601px)" srcset={Image1}>
+                <img aria-hidden="true" loading="lazy" decoding="async" src={Image1} alt="backyard" width="229" height="352">
+            </picture>
+        </div>
+    </div>
+</section>
+                                

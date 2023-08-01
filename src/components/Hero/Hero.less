@@ -1,0 +1,80 @@
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #hero-998 {
+        background-color: #fff;
+        min-height: 100vh;
+        /* 144px - 280px */
+        width: 100%;
+        /* prevents padding from affecting height and width */
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: var(--sectionPadding);
+
+
+        .cs-button-solid {
+            margin-top: 1.2rem;
+            border: 1px solid #ffffff;
+        }
+
+        .cs-container {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .cs-content {
+            display: flex;
+            max-width: 100%;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .cs-content-h1 {
+            font-size: var(--headerFontSize);
+            color: #ffffff;
+        }
+
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            display: block;
+
+            &:before {
+                /* background color overlay */
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: #000;
+                opacity: .4;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* Makes img tag act as a background image */
+                object-fit: cover;
+            }
+        }
+    }
+}

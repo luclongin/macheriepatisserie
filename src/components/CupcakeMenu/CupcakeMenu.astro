@@ -1,0 +1,54 @@
+---
+import "./CupcakeMenu.less";
+import './CupcakeItem.less';
+
+const images = await Astro.glob("../../assets/images/cupcakes/*").then(
+	(files) => {
+		return files.map((file) => file.default);
+	}
+);
+import {cupcakeMenu} from '../../assets/data/cupcakeMenu';
+import { getDataFromImage } from "../../assets/data/cupcakeMenu";
+---
+
+<section id="cupcakes-all">
+	<div class="cs-container">
+		<div class="cs-gallery">
+			{
+				images.map((image) =>
+					cupcakeMenu.map((cupcake) => 
+						image.includes(cupcake.imgUrl) && 
+							<article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset={image} />
+									<source media="(min-width: 601px)" srcset={image} />
+									<img
+										loading="lazy"
+										decoding="async"
+										src={image}
+										alt="logo"
+										width="600"
+										height="600"
+									/>
+								</picture>
+								<p class="cupcake-item-title">
+									{getDataFromImage(image).name}
+								</p>
+								<p class="cupcake-item-price">
+									{getDataFromImage(image).price}
+								</p>
+								<p class="cupcake-item-description">
+									{getDataFromImage(image).description}
+								</p>
+								{
+									getDataFromImage(image).additionalDesc && 
+										<p class="cupcake-item-additionalDesc">
+											{getDataFromImage(image).additionalDesc}
+										</p>
+								}
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>

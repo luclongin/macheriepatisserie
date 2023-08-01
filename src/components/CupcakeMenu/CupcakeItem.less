@@ -1,0 +1,37 @@
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    .cupcake-item {
+        width: 100%;
+        color: var(--bodyTextColor);
+        font-size: var(--bodyFontSize);
+        font-family: 'Sorts Mill Goudy', cursive;
+        font-style: italic;
+        margin-bottom: 3rem;
+        max-width: (445/16rem);
+        // for when the CSS column break, it doesn't
+        // separate the description from the image
+        // e.g: description in column 2, image in column 1
+        break-inside: avoid;
+
+        .cs-image img {
+            width: 100% !important;
+            height: auto !important;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+        .cupcake-item-title {
+            font-weight: 700;
+            margin: 1rem 0 0.5rem;
+            font-size: calc(var(--bodyFontSize) + 0.1rem);
+        }
+
+        .cupcake-item-price,
+        .cupcake-item-description,
+        .cupcake-item-additionalDesc {
+            line-height: 2rem;
+            margin: 1rem 0;
+            font-size: calc(var(--bodyFontSize) + 0.1rem);
+        }
+    }
+}

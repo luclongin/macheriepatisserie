@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<meta name="viewport" content="width=device-width">
+		<meta name="generator" content="Astro v2.9.0">
+		<title>Astro</title>
+	<link rel="stylesheet" href="/_astro/index.85b95d51.css" /><script type="module">var n=document.querySelector("body");const s=document.querySelector("#cs-navigation"),c=document.querySelector("#cs-navigation .cs-toggle");c.addEventListener("click",function(){c.classList.toggle("cs-active"),s.classList.toggle("cs-active"),n.classList.toggle("cs-open"),o()});function o(){const e=document.querySelector("#cs-expanded");e.getAttribute("aria-expanded")==="false"?e.setAttribute("aria-expanded","true"):e.setAttribute("aria-expanded","false")}const a=Array.from(document.querySelectorAll("#cs-navigation .cs-dropdown"));for(const e of a){const t=()=>{e.classList.toggle("cs-active")};e.addEventListener("click",t)}
+</script></head>
+	<body>
+		<!-- ============================================ --><!--                 Navigation                   --><!-- ============================================ --><header id="cs-navigation">
+	<div class="cs-container">
+		<!--Nav Logo-->
+		<a href="" class="cs-logo" aria-label="back to home">
+			<img src="/_astro/bakerylogo.f15c3402.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+		</a>
+		<!--Navigation List-->
+		<nav class="cs-nav" role="navigation">
+			<!--Mobile Nav Toggle-->
+			<button class="cs-toggle" aria-label="mobile menu toggle">
+				<div class="cs-box" aria-hidden="true">
+					<span class="cs-line cs-line1" aria-hidden="true"></span>
+					<span class="cs-line cs-line2" aria-hidden="true"></span>
+					<span class="cs-line cs-line3" aria-hidden="true"></span>
+				</div>
+			</button>
+			<!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+			<div class="cs-ul-wrapper">
+				<ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+					<li class="cs-li">
+						<a id="nav-home-link" href="/" class="cs-li-link">Home</a>
+					</li>
+					<li class="cs-li">
+						<a id="nav-our-story-link" href="#our-story" class="cs-li-link">Our Story</a>
+					</li>
+					<li class="cs-li cs-dropdown" tabindex="0">
+						<span class="cs-li-link">
+							Our cupcakes
+							<img class="cs-drop-icon" src="/_astro/caret-down.96a423f7.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+						</span>
+						<ul class="cs-drop-ul">
+							<li class="cs-drop-li">
+								<a id="nav-cupcakes-month-link" href="#cupcakes-month" class="cs-li-link cs-drop-link">Cupcakes of the month</a>
+							</li>
+							<li class="cs-drop-li">
+								<a id="nav-cupcakes-all-link" href="#cupcakes-all" class="cs-li-link cs-drop-link">All cupcakes</a>
+							</li>
+						</ul>
+					</li>
+					<li class="cs-li">
+						<a id="nav-contact-us-link" href="#contact-us" class="cs-li-link">Contact us</a>
+					</li>
+					<li class="cs-li">
+						<a id="nav-english-link" href="/" class="cs-li-link">English</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<a href="#contact-us" class="cs-button-solid cs-nav-button">Visit our bakery</a>
+	</div>
+</header>
+		<!-- ============================================ --><!--                    Hero                      --><!-- ============================================ --><section id="hero-998">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-content-h1">
+                The finest cupcake factory in Saigon
+            </h1>
+            <a href="#contact-us" class="cs-button-solid">Visit our bakery</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <!--Image is also set as background image in CSS at 1400px for parallax effect-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://images.squarespace-cdn.com/content/v1/56416bdde4b0e386da49c02b/1685651693455-5U3HYW6ZYYW1MHJ586V7/dreamsicle_cupcakes_2023.jpg">
+        <source media="(min-width: 601px)" srcset="https://images.squarespace-cdn.com/content/v1/56416bdde4b0e386da49c02b/1685651693455-5U3HYW6ZYYW1MHJ586V7/dreamsicle_cupcakes_2023.jpg">
+        <img decoding="async" src="https://images.squarespace-cdn.com/content/v1/56416bdde4b0e386da49c02b/1685651693455-5U3HYW6ZYYW1MHJ586V7/dreamsicle_cupcakes_2023.jpg" alt="logo" width="1920" height="1000">
+    </picture>
+</section>
+		<!-- ============================================ --><!--            Side By Side Reverse              --><!-- ============================================ --><section id="our-story">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Story</span>
+            <h2 class="cs-title">A sanctuary within the city</h2>
+            <p class="cs-text">
+                Discover this delightful bakery nestled in the heart of Bình Tân District in Saigon. Established in 2015, this sweet haven is the dream-turned-reality of two talented sisters with a passion for baking. After honing their craft as bakers in France for five years, they returned to their roots with a vision to offer a sustainable and delightful experience.
+                
+            </p>
+            <p class="cs-text">
+                As you step inside, warm ambiance and irresistible aroma create a truly enchanting experience. From special celebrations to everyday indulgences, Ma Chérie Cupcake Factory offers a taste of elegance that leaves a lasting impression on both hearts and taste buds.            
+            </p>    
+        </div>
+        <div class="cs-image-group">
+            <!--Top Left Image-->
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/_astro/shop3.56d7091b.webp">
+                <source media="(min-width: 601px)" srcset="/_astro/shop3.56d7091b.webp">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/_astro/shop3.56d7091b.webp" alt="backyard" width="229" height="352">
+            </picture>
+            <!--Top Right Image-->
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/_astro/shop2.eb4137ee.webp">
+                <source media="(min-width: 601px)" srcset="/_astro/shop2.eb4137ee.webp">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/_astro/shop2.eb4137ee.webp" width="390" height="352">
+            </picture>
+            <!--Bottom Image-->
+            <picture class="cs-picture cs-picture3">
+                <source media="(max-width: 600px)" srcset="/_astro/shop1.122cc001.webp">
+                <source media="(min-width: 601px)" srcset="/_astro/shop1.122cc001.webp">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/_astro/shop1.122cc001.webp" alt="backyard" width="229" height="352">
+            </picture>
+        </div>
+    </div>
+</section>
+		<section id="cupcakes-month">
+	<div class="cs-container">
+		<div class="menu-intro">
+			<h2>Our flavors rotate throughout the year</h2>
+			<h3>
+				Cupcake selection for July
+			</h3>
+		</div>
+		<div class="menulist-list">
+			<ul>
+				<li><p class="flavor-item">&quot;18 Carat&quot;</p></li><li><p class="flavor-item">7up</p></li><li><p class="flavor-item">All Chocolate</p></li><li><p class="flavor-item">Classic Vanilla</p></li><li><p class="flavor-item">Decorated Chocolate &amp; Vanilla</p></li><li><p class="flavor-item">Fresh Strawberry &amp; Cream</p></li><li><p class="flavor-item">Key Lime</p></li><li><p class="flavor-item">Lemon Curd</p></li><li><p class="flavor-item">Malted Honey &amp; Blackberry Artisan</p></li><li><p class="flavor-item">Mocha Buttercream</p></li><li><p class="flavor-item">Classic Chocolate</p></li><li><p class="flavor-item">Oreo Buttercream</p></li><li><p class="flavor-item">Pink Lemonade</p></li><li><p class="flavor-item">Pumpkin Chocolate Chip</p></li><li><p class="flavor-item">Red Velvet</p></li><li><p class="flavor-item">Raspberry Lady</p></li>
+                <li class="menulist-list-title">Cupcakes baked without gluten</li>
+                <li><p class="flavor-item">All Chocolate</p></li><li><p class="flavor-item">Mocha Buttercream</p></li><li><p class="flavor-item">Classic Chocolate</p></li><li><p class="flavor-item">Pumpkin Chocolate Chip</p></li><li><p class="flavor-item">Red Velvet</p></li><li><p class="flavor-item">Strawberry &amp; Cream</p></li><li><p class="flavor-item">Classic Vanilla</p></li>
+			</ul>
+		</div>
+	</div>
+</section>
+		<section id="cupcakes-all">
+	<div class="cs-container">
+		<div class="cs-gallery">
+			<article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/18_karat_cupcake.ffcea24a.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/18_karat_cupcake.ffcea24a.webp">
+									<img loading="lazy" decoding="async" src="/_astro/18_karat_cupcake.ffcea24a.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									&quot;18 Carat&quot; Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									35k
+								</p>
+								<p class="cupcake-item-description">
+									Made with grated organic carrots, pineapple, walnuts &amp; spice. Our favorite carrot cake ... ever!
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/7_up_cupcake_2021.4b451e30.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/7_up_cupcake_2021.4b451e30.webp">
+									<img loading="lazy" decoding="async" src="/_astro/7_up_cupcake_2021.4b451e30.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									7 Up Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									30k
+								</p>
+								<p class="cupcake-item-description">
+									Uplifting organic lemon and lime juice flavor this cake and the cream cheese frosting. Our 7 Up cupcake has a loyal following!
+								</p>
+								<p class="cupcake-item-additionalDesc">
+											( Available March through September )
+										</p>
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/WCP_cc_2022_03.f432b83e.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/WCP_cc_2022_03.f432b83e.webp">
+									<img loading="lazy" decoding="async" src="/_astro/WCP_cc_2022_03.f432b83e.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									White Chocolate Peppermint Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									40k
+								</p>
+								<p class="cupcake-item-description">
+									We nestle crushed candies and white chocolate into our batter, then frost with white chocolate buttercream! So fun!
+								</p>
+								<p class="cupcake-item-additionalDesc">
+											( Available October through December )
+										</p>
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/aa_cupcake_2023.46bb0f6f.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/aa_cupcake_2023.46bb0f6f.webp">
+									<img loading="lazy" decoding="async" src="/_astro/aa_cupcake_2023.46bb0f6f.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									All Chocolate Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									30k
+								</p>
+								<p class="cupcake-item-description">
+									Really makes me think of a cake mix cake ... for all the right reasons! (But its not - we make it from scratch just like all of our other cakes and use melted Guittard chocolate chips! ) It is fluffy, yet rich, has a tender crumb and just begs for a glass of cold milk to drink along with it!
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/apple_caramel_cupcakes_02.d372b37e.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/apple_caramel_cupcakes_02.d372b37e.webp">
+									<img loading="lazy" decoding="async" src="/_astro/apple_caramel_cupcakes_02.d372b37e.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Caramel Apple Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									30k
+								</p>
+								<p class="cupcake-item-description">
+									Apple cupcakes with caramel cream cheese frosting!
+								</p>
+								<p class="cupcake-item-additionalDesc">
+											( Available October through January )
+										</p>
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/brown_sugar_caramel_cupcakes_01.352f2edb.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/brown_sugar_caramel_cupcakes_01.352f2edb.webp">
+									<img loading="lazy" decoding="async" src="/_astro/brown_sugar_caramel_cupcakes_01.352f2edb.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Brown Sugar Caramel Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									35k
+								</p>
+								<p class="cupcake-item-description">
+									A fall favorite! Caramel cream cheese frosting atop tender little cupcakes with just a pinch of brown sugar on top!
+								</p>
+								<p class="cupcake-item-additionalDesc">
+											( Available October through January )
+										</p>
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/choc_bc_cc_2023b.94aafae9.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/choc_bc_cc_2023b.94aafae9.webp">
+									<img loading="lazy" decoding="async" src="/_astro/choc_bc_cc_2023b.94aafae9.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Chocolate Cupcake with Vanilla Buttercream 
+								</p>
+								<p class="cupcake-item-price">
+									35k
+								</p>
+								<p class="cupcake-item-description">
+									All Chocolate cupcakes with vanilla buttercream frosting.
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/choc_mousse_cupcake_2021.5335c11d.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/choc_mousse_cupcake_2021.5335c11d.webp">
+									<img loading="lazy" decoding="async" src="/_astro/choc_mousse_cupcake_2021.5335c11d.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Chocolate Mousse filled Artisan Cupcake with Strawberry Cream Cheese Icing
+								</p>
+								<p class="cupcake-item-price">
+									50k
+								</p>
+								<p class="cupcake-item-description">
+									All Chocolate cupcake filled with chocolate mousse and topped with strawberry cream cheese icing. Garnished with chocolate curls.
+								</p>
+								<p class="cupcake-item-additionalDesc">
+											( Available only in February )
+										</p>
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/dreamsicle_cupcakes_2023.481deacd.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/dreamsicle_cupcakes_2023.481deacd.webp">
+									<img loading="lazy" decoding="async" src="/_astro/dreamsicle_cupcakes_2023.481deacd.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Dreamsicle Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									30k
+								</p>
+								<p class="cupcake-item-description">
+									Pure, organic orange extract flavors our cream cheese cupcake which is then topped with cream cheese icing and grated white chocolate.
+								</p>
+								<p class="cupcake-item-additionalDesc">
+											( Available March through September )
+										</p>
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/fall_deco_cc_2022_04.353bf834.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/fall_deco_cc_2022_04.353bf834.webp">
+									<img loading="lazy" decoding="async" src="/_astro/fall_deco_cc_2022_04.353bf834.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Seasonal Decorated Cupcakes
+								</p>
+								<p class="cupcake-item-price">
+									40k
+								</p>
+								<p class="cupcake-item-description">
+									Price may vary with seasonal decoration.
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/image-asset.ab217d58.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/image-asset.ab217d58.webp">
+									<img loading="lazy" decoding="async" src="/_astro/image-asset.ab217d58.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Classic Chocolate Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									35k
+								</p>
+								<p class="cupcake-item-description">
+									The perennial kids&#39; favorite cake! Butter cupcake with chocolate icing. Pure and simple.
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/keylime_cupcake_2021c.598c774b.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/keylime_cupcake_2021c.598c774b.webp">
+									<img loading="lazy" decoding="async" src="/_astro/keylime_cupcake_2021c.598c774b.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Key Lime Curd Pot
+								</p>
+								<p class="cupcake-item-price">
+									40k
+								</p>
+								<p class="cupcake-item-description">
+									Our cream cheese cupcakes filled with freshly cooked homemade key lime curd! Cream cheese frosting and organic lime zest atop!
+								</p>
+								<p class="cupcake-item-additionalDesc">
+											( Available March through September )
+										</p>
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/lemon_curd_pot_2021c.24b79380.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/lemon_curd_pot_2021c.24b79380.webp">
+									<img loading="lazy" decoding="async" src="/_astro/lemon_curd_pot_2021c.24b79380.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Lemon Curd Pot
+								</p>
+								<p class="cupcake-item-price">
+									40k
+								</p>
+								<p class="cupcake-item-description">
+									Cream cheese cupcakes filled with our freshly cooked organic lemon curd. Iced with cream cheese frosting and a bit of zest on top!
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/mocha_cc_2023a.b27a4e5e.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/mocha_cc_2023a.b27a4e5e.webp">
+									<img loading="lazy" decoding="async" src="/_astro/mocha_cc_2023a.b27a4e5e.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Mocha Buttercream Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									35k
+								</p>
+								<p class="cupcake-item-description">
+									The perfect combination of coffee and chocolate in a cake! Features organic unbleached flour, buttermilk, melted chocolate chips, organic espresso and pure vanilla.
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/oreo_cupcake_2021.d4b6e0de.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/oreo_cupcake_2021.d4b6e0de.webp">
+									<img loading="lazy" decoding="async" src="/_astro/oreo_cupcake_2021.d4b6e0de.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Oreo Buttercream Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									35k
+								</p>
+								<p class="cupcake-item-description">
+									Something for the kid in all of us! Chocolate cake made with Guittard Chocolate, enrobed in a chocolate cream cookie buttercream icing!
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/pcc_cc.19896a35.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/pcc_cc.19896a35.webp">
+									<img loading="lazy" decoding="async" src="/_astro/pcc_cc.19896a35.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Pumpkin Chocolate Chip Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									35k
+								</p>
+								<p class="cupcake-item-description">
+									A real shop favorite! Inspired by Spring Garden&#39;s pumpkin chocolate chip muffins. Iced with cream cheese.
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/raspberry_lady_cc_2023.90b71766.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/raspberry_lady_cc_2023.90b71766.webp">
+									<img loading="lazy" decoding="async" src="/_astro/raspberry_lady_cc_2023.90b71766.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Raspberry Lady Pot Artisan Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									30k
+								</p>
+								<p class="cupcake-item-description">
+									Cream cheese cupcakes filled with raspberry jam and iced in a light raspberry jam/cream cheese blend!
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/red_velvet_cc_2023b.2aaea150.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/red_velvet_cc_2023b.2aaea150.webp">
+									<img loading="lazy" decoding="async" src="/_astro/red_velvet_cc_2023b.2aaea150.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Red Velvet Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									35k
+								</p>
+								<p class="cupcake-item-description">
+									Classic red velvet with an extra dose of cocoa! Iced with cream cheese frosting and a few chocolate shavings.
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/smores_2022.3fb4bc63.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/smores_2022.3fb4bc63.webp">
+									<img loading="lazy" decoding="async" src="/_astro/smores_2022.3fb4bc63.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									S&#39;mores Artisan Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									50k
+								</p>
+								<p class="cupcake-item-description">
+									We make a graham cracker crust, tuck marshmallow filling into our chocolate cupcake, then ice it with a marshmallow buttercream and dip it in our chocolate ganache with mini vegan marshmallows on top! Just too Good!
+								</p>
+								<p class="cupcake-item-additionalDesc">
+											( Available October through March )
+										</p>
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/strawberrypots_cc2017.50b20ecf.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/strawberrypots_cc2017.50b20ecf.webp">
+									<img loading="lazy" decoding="async" src="/_astro/strawberrypots_cc2017.50b20ecf.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Fresh Strawberry &amp; Cream Pot
+								</p>
+								<p class="cupcake-item-price">
+									40k
+								</p>
+								<p class="cupcake-item-description">
+									Freshly sliced berries fill the inside of this cream cheese cupcake which is topped with vanilla buttercream.
+								</p>
+								
+					</article><article class="cupcake-item">
+								<picture class="cs-image">
+									<source media="(max-width: 600px)" srcset="/_astro/vanilla_cupcake.46a2a0b7.webp">
+									<source media="(min-width: 601px)" srcset="/_astro/vanilla_cupcake.46a2a0b7.webp">
+									<img loading="lazy" decoding="async" src="/_astro/vanilla_cupcake.46a2a0b7.webp" alt="logo" width="600" height="600">
+								</picture>
+								<p class="cupcake-item-title">
+									Classic Vanilla Cupcake
+								</p>
+								<p class="cupcake-item-price">
+									30k
+								</p>
+								<p class="cupcake-item-description">
+									Pure and simple. Vanilla buttercream on our tender cream cheese cupcakes.
+								</p>
+								
+					</article>
+		</div>
+	</div>
+</section>
+		<!-- ============================================ --><!--                   Stats                      --><!-- ============================================ --><!-- No headers, so no section tag --><div id="contact-us">
+    <ul class="cs-stat-group">
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-grey.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-header">Phone</span>
+                <a href="tel:0768333326" class="cs-link">0768 333 326</a>
+                <a href="tel:0767331327" class="cs-link">0767 331 327</a>
+            </div>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-grey.svg" alt="icon" width="40" height="35" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-header">Address</span>
+                <a href="" class="cs-link">4449 Nguyen Cuu Phu<br>Binh Tan District, HCMC</a>
+            </div>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/clock-grey.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-header">Open Hours</span>
+                <span class="cs-hours">Tuesday To Sunday</span>
+                <span class="cs-hours">6:00 AM - 5:00 PM</span>
+            </div>
+        </li>
+    </ul>
+</div>
+		<!-- ============================================ --><!--                   Footer                     --><!-- ============================================ --><footer id="footer">
+	<div class="cs-container">
+		<!-- Logo Group -->
+		<div class="cs-logo-group">
+			<a aria-label="go back to home" class="cs-logo" href="">
+				<img class="cs-logo-img light" aria-hidden="true" loading="lazy" decoding="async" src="/_astro/bakerylogo.f15c3402.svg" alt="logo" width="240" height="32">
+			</a>
+		</div>
+		<!-- Links -->
+		<ul class="cs-nav">
+			<li class="cs-nav-li">
+				<span class="cs-header">Sitemap</span>
+			</li>
+			<li class="cs-nav-li">
+				<a class="cs-nav-link" href="">Our Story</a>
+			</li>
+			<li class="cs-nav-li">
+				<a class="cs-nav-link" href="">Our cupcakes</a>
+			</li>
+			<li class="cs-nav-li">
+				<a class="cs-nav-link" href="">Contact us</a>
+			</li>
+			<li class="cs-nav-li">
+				<a class="cs-nav-link" href="">English</a>
+			</li>
+			<li class="cs-nav-li">
+				<a class="cs-nav-link" href="">Visit our bakery</a>
+			</li>
+		</ul>
+		<!-- Contact Info -->
+		<ul class="cs-contact">
+			<li class="cs-nav-li">
+				<span class="cs-header">Contact</span>
+			</li>
+			<li class="cs-contact-li">
+				<a class="cs-contact-link" href="tel: 0768333326">0768 333 326</a>
+			</li><li class="cs-contact-li">
+				<a class="cs-contact-link" href="tel: 0768333326">0767 331 327</a>
+			</li>
+		</ul>
+	</div>
+</footer>
+	</body></html>

@@ -1,0 +1,255 @@
+:root {
+  /* remove this whole :root and put in your global css file that's shared on all pages, then just remove this section from all other Stitches you add later, only need this once in your global stylesheet */
+  --primary: #7fa99b;
+  --primaryLight: #5A766A;
+  --secondary: #FFBA43;
+  --secondaryLight: #FFBA43;
+  --headerColor: #7fa99b;
+  --bodyTextColor: #4E4B66;
+  --bodyTextColorWhite: #FAFBFC;
+  --borderColor: #cdcae2;
+
+  /* 13px - 16px */
+  --topperFontSize: clamp(.8125rem, 1.6vw, 1rem);
+  /* 31px - 49px */
+  --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  --subheaderFontSize: clamp(0.6rem, 5vw, 1.6rem);
+  --bodyFontSize: clamp(0.8rem, 5vw, 1rem);
+  /* 60px - 100px top and bottom */
+  --sectionMargin: clamp(3.75rem, 7.82vw, 6.25rem) 2rem;
+  /* 60px - 100px top and bottom */
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 2rem;
+  --navPadding: 0 1rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* raleway-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/raleway-v28-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/raleway-v28-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/raleway-v28-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/raleway-v28-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-800 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fonts/raleway-v28-latin-800.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-900 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../assets/fonts/raleway-v28-latin-900.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* sorts-mill-goudy-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Sorts Mill Goudy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/sorts-mill-goudy-v15-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* sorts-mill-goudy-italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Sorts Mill Goudy';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../assets/fonts/sorts-mill-goudy-v15-latin-italic.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  .cs-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 108px */
+    gap: clamp(3rem, 6vw + 1.1em, 6.75rem);
+  }
+
+  .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: (542/16rem);
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+    position: relative;
+    z-index: 200;
+  }
+
+  .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: (4/16rem);
+    display: block;
+  }
+
+  .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: (700/16rem);
+    margin: 0 0 (32/16rem) 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+
+  .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: (650/16rem);
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+
+  .cs-text {
+    /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+    margin-bottom: (16/16rem);
+
+    &:last-of-type {
+      margin-bottom: (32/16rem);
+    }
+  }
+
+  .cs-button-solid {
+    font-size: var(--bodyFontSize);
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #000;
+    background: #fff;
+    min-width: (150/16rem);
+    padding: 0 (24/16rem);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    border-radius: 2rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      border-radius: 2rem;
+      width: 0%;
+      background: var(--primary);
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width .2s;
+    }
+
+    &:hover {
+      &:before {
+        width: 100%;
+      }
+      color: #fff;
+      border: 1px solid var(--primary)!important;
+    }
+  }
+}
+
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  .cs-container {
+    max-width: (1280/16rem);
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}

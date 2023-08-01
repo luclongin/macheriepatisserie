@@ -1,0 +1,27 @@
+---
+import './Hero.less';
+import HeroImg from '../../assets/images/dreamsicle_cupcakes_2023.webp';
+import HeroImgMobile from '../../assets/images/dreamsicle_cupcakes_2023-m.webp';
+---
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-998">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-content-h1">
+                The finest cupcake factory in Saigon
+            </h1>
+            <a href="#contact-us" class="cs-button-solid">Visit our bakery</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <!--Image is also set as background image in CSS at 1400px for parallax effect-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset={HeroImgMobile}>
+        <source media="(min-width: 601px)" srcset={HeroImg}>
+        <img decoding="async" src={HeroImg} alt="logo" width="1920" height="1000">
+    </picture>
+</section>
+                                
